@@ -1,6 +1,6 @@
 Here I implement Orchestration based Saga pattern for a multi-step checkout workflow
 
-
+```
 saga-checkout/
 ├── models.py            # Order dataclass
 ├── main.py              # demo scenarios
@@ -9,7 +9,7 @@ saga-checkout/
 │   └── checkout.py      # payment/inventory/shipping functions
 └── tests/
     └── test_saga.py
-
+```
 
 Steps are plain functions paired into a Step(name, action, rollback) dataclass, no inheritance needed.
 The Workflow class runs them in sequence and rolls back on failure.
