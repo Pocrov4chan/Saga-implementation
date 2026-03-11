@@ -29,7 +29,9 @@ The workflow as following:
 6. run() returns a WorkflowResult with ok=True/False, a list of outcomes per step, and the error message if any
 
 Commands:
+```
 python3 -m venv .venv && source .venv/bin/activate
 pip install pytest
 python main.py        # runs 4 demo scenarios
 pytest tests/ -v      # runs unit tests
+```
